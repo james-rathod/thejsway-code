@@ -38,12 +38,37 @@ let monthNumber = Number(prompt('Tell me the number of the month.'));
 
 // below is the shorter solution using the same if-else statement
 
-if (monthNumber === 1 || monthNumber === 3 || monthNumber === 5 || monthNumber === 7 || monthNumber === 8 || monthNumber === 10 || monthNumber === 12){
-    alert('This month has 31 days.');
-} else if(monthNumber === 4 || monthNumber === 6 || monthNumber === 9 || monthNumber === 11){
-    alert('This month has 30 days.');
-} else if(monthNumber === 2){
-    alert('This month has 28 days.');
-} else{
-    alert('Incorrect input.')
+// if (monthNumber === 1 || monthNumber === 3 || monthNumber === 5 || monthNumber === 7 || monthNumber === 8 || monthNumber === 10 || monthNumber === 12){
+//     alert('This month has 31 days.');
+// } else if(monthNumber === 4 || monthNumber === 6 || monthNumber === 9 || monthNumber === 11){
+//     alert('This month has 30 days.');
+// } else if(monthNumber === 2){
+//     alert('This month has 28 days.');
+// } else{
+//     alert('Incorrect input.')
+// }
+
+
+// solution using the switch statement
+
+switch(monthNumber){
+    case 1:
+    case 3:
+    case 5:
+    case 7:
+    case 8:
+    case 10:
+    case 12:
+        alert('This month has 31 days!');
+        break;
+    case 4:
+    case 6:
+    case 9:
+    case 11:
+        alert('This month has 30 days!');
+        break;
+    case 2:
+        alert('This month has 28 days!')
+    default:
+        alert('Incorrect input!');
 }
