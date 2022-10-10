@@ -19,17 +19,37 @@
 // }
 
 // function expression
+// let calculate = (num1, operator, num2) => {
+//     if(operator === '+'){
+//         return num1 + num2;
+//     }else if(operator === '-'){
+//         return num1 - num2;
+//     }else if(operator === '*'){
+//         return num1 * num2;
+//     }else if(operator === '/'){
+//         return num1 / num2;
+//     }
+// }
+
+// fat arrow with switch statements
 let calculate = (num1, operator, num2) => {
-    if(operator === '+'){
-        return num1 + num2;
-    }else if(operator === '-'){
-        return num1 - num2;
-    }else if(operator === '*'){
-        return num1 * num2;
-    }else if(operator === '/'){
-        return num1 / num2;
-    }
+    let result;
+    switch(operator){
+        case '+':
+            result = num1 + num2;
+            break;
+        case '-':
+            result = num1 - num2;
+            break;
+        case '*':
+            result = num1 * num2;
+            break;
+        case '/':
+            result = num1 / num2;
+            break;
+    } return result;
 }
+
 
 console.log(calculate(4, "+", 6));  // Must show 10
 console.log(calculate(4, "-", 6));  // Must show -2
