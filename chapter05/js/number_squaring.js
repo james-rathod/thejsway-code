@@ -24,4 +24,9 @@ console.log(square2(5)); // Must show 25
 
 // When it's done, update the program so that it shows the square of every number between 0 and 10.
 
+for(let i = 0; i <= 10; i++){
+  console.log(square1(i));
+}
+
+
 //     Writing 10 dumb calls to square() is forbidden! You know how to repeat statements, don't you? ;)
