@@ -31,3 +31,7 @@ console.log(`Look, a cat! ${fang.name} barks: ${fang.bark()}`);
 const snowy = new Dog("Snowy", "terrier", 22);
 console.log(`${snowy.name} is a ${snowy.species} dog measuring ${snowy.size}`);
 console.log(`Look, a cat! ${snowy.name} barks: ${snowy.bark()}`);
+
+const einey = new Dog('Einey', 'Doberman', 45);
+console.log(`${einey.name} is a ${einey.species} dog measuring ${einey.size}`);
+console.log(`Look, a cat! ${einey.name} barks: ${einey.bark()}`);
